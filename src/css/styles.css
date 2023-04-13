@@ -236,6 +236,7 @@ body {
 }
 
 .footer {
+  width: auto;
   height: 120px;
   display: flex;
   flex-direction: row;
@@ -247,7 +248,6 @@ body {
 }
 @media screen and (min-width: 768px) {
   .footer {
-    width: 840px;
     position: relative;
     top: 80px;
     padding: 0 80px;
@@ -256,7 +256,6 @@ body {
 }
 @media screen and (min-width: 1440px) {
   .footer {
-    width: 1440px;
     top: 230px;
     padding: 0 100px;
   }
