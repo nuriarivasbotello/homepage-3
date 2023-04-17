@@ -42,6 +42,7 @@ a {
 }
 
 body {
+  position: relative;
   max-width: 1440px;
   margin: 0 auto;
   background-color: white;
@@ -93,24 +94,17 @@ body {
     background-color: var(--button-dark-hover);
   }
 }
+
 .banner {
-  width: 398px;
-  margin: 0 20px;
 }
 @media screen and (min-width: 768px) {
   .banner {
-    width: 430px;
-    margin-top: 50px;
     display: flex;
     flex-direction: row;
   }
 }
 @media screen and (min-width: 1440px) {
   .banner {
-    width: 457px;
-    margin-left: 170px;
-    margin-top: 50px;
-
     display: flex;
     flex-direction: row;
   }
@@ -140,27 +134,22 @@ body {
 }
 .image {
   width: 330px;
-  height: 300px;
   margin-top: 40px;
+  position: absolute;
 }
 @media screen and (min-width: 768px) {
   .image {
     width: 640px;
-    height: 640px;
-    position: absolute;
-    left: 450px;
-    bottom: 100px;
+    top: 0;
+
     margin-top: 0;
   }
 }
 @media screen and (min-width: 1440px) {
   .image {
     width: 990px;
-    height: 940px;
-    position: absolute;
     left: 900px;
     bottom: 400px;
-    margin-top: 0;
   }
 }
 .cards {
@@ -170,9 +159,11 @@ body {
 }
 @media screen and (min-width: 768px) {
   .cards {
+    width: 768px;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 283px 283px 283px;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -250,6 +241,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .footer {
+    width: 768px;
     position: relative;
     top: 80px;
     padding: 0 80px;
