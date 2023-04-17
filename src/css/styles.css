@@ -11,7 +11,7 @@
   --font-size-button: 16px;
   --color-title: rgb(19, 24, 63);
   --color-text: rgb(131, 134, 154);
-  --font-style: "Plus Jakarta Sans", sans-serif;
+  --font-style: 'Plus Jakarta Sans', sans-serif;
   --background-button-warm: linear-gradient(
     rgba(255, 111, 72, 1) 0%,
     rgba(240, 42, 166, 1) 100%
@@ -44,7 +44,7 @@ a {
 body {
   max-width: 1440px;
   margin: 0 auto;
-  background-color: rgb(197, 197, 197);
+  background-color: white;
 }
 .header {
   width: 360px;
@@ -148,8 +148,8 @@ body {
     width: 640px;
     height: 640px;
     position: absolute;
-    left: 380px;
-    bottom: 350px;
+    left: 450px;
+    bottom: 100px;
     margin-top: 0;
   }
 }
@@ -158,8 +158,8 @@ body {
     width: 990px;
     height: 940px;
     position: absolute;
-    left: 750px;
-    bottom: 100px;
+    left: 900px;
+    bottom: 400px;
     margin-top: 0;
   }
 }
@@ -201,7 +201,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .card-gradient {
-    height: 259px;
+    height: 200px;
     padding: 0 40px;
     text-align: left;
     font-size: 30px;
@@ -221,6 +221,8 @@ body {
 @media screen and (min-width: 768px) {
   .card {
     margin-left: 20px;
+    border-radius: 10px;
+    background-color: rgba(184, 184, 184, 0.285);
   }
 }
 .card__title {
